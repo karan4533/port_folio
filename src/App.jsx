@@ -9,10 +9,7 @@ import TechSkills from './components/TechSkills';
 import Experience from './components/Experience';
 import IndustryProjects from './components/IndustryProjects';
 import Education from './components/Education';
-import AcademicRoles from './components/AcademicRoles';
-import Publications from './components/Publications';
 import CertificationsAwards from './components/CertificationsAwards';
-import MembershipsCollaborations from './components/MembershipsCollaborations';
 import { profileData } from './data';
 
 function App() {
@@ -80,11 +77,11 @@ function App() {
           {/* Profile Section */}
           <PersonalDetails data={profileData} />
 
-          {/* ====== IT / INDUSTRY SECTION ====== */}
+          {/* ====== OVERVIEW SECTION ====== */}
           <SectionDivider
             number="I"
-            title="IT / INDUSTRY ACHIEVEMENTS"
-            subtitle="Enterprise AI, GenAI & Technology Leadership"
+            title="OVERVIEW"
+            subtitle="Objectives, Core Skills & Technology Stack"
             color="blue"
           />
 
@@ -92,27 +89,29 @@ function App() {
 
           <TechSkills techSkills={profileData.techSkills} />
 
+          {/* ====== EXPERIENCE & PROJECTS SECTION ====== */}
+          <SectionDivider
+            number="II"
+            title="EXPERIENCE & PROJECTS"
+            subtitle="Work Experience, Internships & Personal Projects"
+            color="blue"
+          />
+
           <Experience experience={profileData.itExperience} />
 
           <IndustryProjects projects={profileData.industryProjects} />
 
           {/* ====== ACADEMIC SECTION ====== */}
           <SectionDivider
-            number="II"
-            title="ACADEMIC & RESEARCH ACHIEVEMENTS"
-            subtitle="Education, Research, Publications & Collaborations"
+            number="III"
+            title="ACADEMIC & CERTIFICATIONS"
+            subtitle="Education, Certifications & Awards"
             color="purple"
           />
 
           <Education education={profileData.education} />
 
-          <AcademicRoles data={profileData} />
-
-          <Publications data={profileData} />
-
           <CertificationsAwards data={profileData} />
-
-          <MembershipsCollaborations data={profileData} />
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ const Experience = ({ experience }) => {
         <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center mr-4 shadow-md">
           <i className="fas fa-briefcase text-white text-xl"></i>
         </div>
-        <h3 className="text-2xl font-bold text-gray-900">Industry Work Experience</h3>
+        <h3 className="text-2xl font-bold text-gray-900">Work Experience</h3>
       </div>
 
       <div className="relative space-y-6">
@@ -56,6 +56,20 @@ const Experience = ({ experience }) => {
                     </li>
                   ))}
                 </ul>
+              )}
+
+              {exp.githubUrl && (
+                <div className="mt-4">
+                  <a
+                    href={exp.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-700 bg-gray-100 hover:bg-gray-900 hover:text-white px-3 py-1.5 rounded-lg transition-all duration-200"
+                  >
+                    <i className="fab fa-github text-sm"></i>
+                    View Project on GitHub
+                  </a>
+                </div>
               )}
             </div>
           </div>

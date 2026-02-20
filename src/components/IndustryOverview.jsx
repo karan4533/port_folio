@@ -10,7 +10,7 @@ const IndustryOverview = ({ data }) => {
             <i className="fas fa-bullseye text-white text-xl"></i>
           </div>
           <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Professional Identity</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Objective</h3>
             <p className="text-gray-700 text-lg leading-relaxed font-medium">
               {data.brandStatement}
             </p>
@@ -24,7 +24,7 @@ const IndustryOverview = ({ data }) => {
           <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center mr-4 shadow-md">
             <i className="fas fa-chart-line text-white text-xl"></i>
           </div>
-          <h3 className="text-2xl font-bold text-gray-900">Industry Leadership Summary</h3>
+          <h3 className="text-2xl font-bold text-gray-900">Key Highlights</h3>
         </div>
         <div className="space-y-3">
           {data.industryLeadership.map((item, index) => (
@@ -44,7 +44,7 @@ const IndustryOverview = ({ data }) => {
           <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center mr-4 shadow-md">
             <i className="fas fa-star text-white text-xl"></i>
           </div>
-          <h3 className="text-2xl font-bold text-gray-900">Core Industry Expertise</h3>
+          <h3 className="text-2xl font-bold text-gray-900">Areas of Focus</h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {data.coreExpertise.map((item, index) => (

@@ -11,7 +11,7 @@ const CertificationsAwards = ({ data }) => {
           </div>
           <div>
             <h3 className="text-2xl font-bold text-gray-900">Certifications</h3>
-            <p className="text-purple-600 text-sm font-semibold">70+ Certifications Earned</p>
+            <p className="text-purple-600 text-sm font-semibold">Earned During Studies & Work</p>
           </div>
         </div>
 
@@ -38,7 +38,7 @@ const CertificationsAwards = ({ data }) => {
           </div>
           <div>
             <h3 className="text-2xl font-bold text-gray-900">Awards & Honors</h3>
-            <p className="text-amber-600 text-sm font-semibold">17+ Awards Received</p>
+            <p className="text-amber-600 text-sm font-semibold">Recognition & Honors</p>
           </div>
         </div>
 

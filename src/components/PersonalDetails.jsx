@@ -105,6 +105,15 @@ const PersonalDetails = ({ data }) => {
                 </a>
               </div>
             ))}
+
+            {data.contact.location && (
+              <div className="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-all duration-200 border border-gray-200">
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-red-400 to-red-600 flex items-center justify-center flex-shrink-0">
+                  <i className="fas fa-map-marker-alt text-white text-sm"></i>
+                </div>
+                <span className="text-gray-700 font-medium">{data.contact.location}</span>
+              </div>
+            )}
           </div>
         </div>
 
@@ -114,7 +123,7 @@ const PersonalDetails = ({ data }) => {
             <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center mr-3">
               <i className="fas fa-id-card text-white"></i>
             </div>
-            Academic Identity
+            Online Profiles
           </h3>
           <div className="grid grid-cols-2 gap-3">
             {data.academicIdentity.map((identity, index) => (

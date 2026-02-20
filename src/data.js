@@ -1,272 +1,161 @@
 export const profileData = {
-  labName: "AI & GenAI Technology Lab",
-  department: "AI/GenAI & IT Technology Services",
-  university: "GGS Information Services India Pvt Ltd",
+  labName: "Karan M.L",
+  department: "M.Tech Integrated – Computer Science",
+  university: "VIT University, Andhra Pradesh",
 
-  name: "Dr. Karthikeyan Saminathan",
-  title: "Country Head – AI/GenAI & IT",
-  designation: "Country Head – AI / GenAI & IT",
-  departmentName: "Technology Services, Asia",
-  tagline: "NASSCOM Brand Ambassador | Global Keynote Speaker | SIH Tech Evaluator | 350+ AI Tech Talks Delivered | Chief GenAI Architect",
+  name: "Karan M.L",
+  title: "M.Tech Integrated Student",
+  designation: "M.Tech Integrated Student",
+  departmentName: "Computer Science & Engineering",
+  tagline: "AI/ML Enthusiast | Full Stack Developer | Backend Architect | Open Source Builder",
 
-  brandStatement: "Chief GenAI Architect and Technology Leader with 16+ years of experience in Enterprise AI, Generative AI, Multi-Agentic Systems, and Large-Scale AI Transformation, delivering production-grade AI platforms across Automotive OEMs, Manufacturing, Defense, AEC, and Enterprise IT on AWS, Azure, and GCP.",
+  brandStatement: "An enthusiastic and adaptable Computer Science student with strong technical and analytical skills, focused on solving real-world problems through innovative technology solutions. Passionate about AI/ML Engineering, continuous learning, and building impactful products through collaborative development.",
 
-  profileImage: "/karthik.jpeg",
+  profileImage: "/karan.jpeg",
 
   contact: {
-    phone: "+91-97913 06877",
-    emails: ["karthikintelligence@gmail.com"]
+    phone: "+91 7448907020",
+    emails: ["mlkaran2004@gmail.com"],
+    location: "Erode, Tamil Nadu"
   },
 
   stats: [
-    { label: "AI Tech Talks", value: "350+", icon: "fas fa-microphone" },
-    { label: "Research Papers", value: "75+", icon: "fas fa-file-alt" },
-    { label: "Projects Handled", value: "70+", icon: "fas fa-project-diagram" },
-    { label: "Patents", value: "12+", icon: "fas fa-lightbulb" }
+    { label: "Projects Built", value: "4+", icon: "fas fa-project-diagram" },
+    { label: "Internships", value: "2", icon: "fas fa-briefcase" },
+    { label: "CGPA", value: "8.40", icon: "fas fa-graduation-cap" },
+    { label: "Certifications", value: "5+", icon: "fas fa-certificate" }
   ],
 
   academicIdentity: [
-    { name: "Google Scholar", url: "https://scholar.google.com/citations?user=TNXQuZwAAAAJ&hl=en", icon: "fas fa-graduation-cap" },
-    { name: "ORCID", url: "https://orcid.org/0000-0003-2540-5752", icon: "fab fa-orcid" },
-    { name: "Scopus", url: "https://www.scopus.com/authid/detail.uri?authorId=57195540149", icon: "fas fa-book" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/karthikeyan-saminathan/", icon: "fab fa-linkedin" },
-    { name: "GitHub", url: "https://github.com/karthikeyan-s", icon: "fab fa-github" },
-    { name: "Web of Science", url: "#", icon: "fas fa-flask" }
+    { name: "LinkedIn", url: "https://linkedin.com/in/karan45", icon: "fab fa-linkedin" },
+    { name: "GitHub", url: "https://github.com/karan4533", icon: "fab fa-github" },
+    { name: "Email", url: "mailto:mlkaran2004@gmail.com", icon: "fas fa-envelope" }
   ],
 
   interests: [
-    "Generative AI & LLM Orchestration",
-    "Multi-Agentic AI RAG Systems",
-    "Agentic AI Workflows",
-    "NLP & Advanced RAG",
-    "Computer Vision & Video Analytics",
-    "Cloud Architecture (AWS/GCP)",
-    "MLOps & LLMOps",
-    "Data Science & Big Data"
+    "Full Stack Development",
+    "Backend Architecture",
+    "API Design",
+    "Database Systems",
+    "System Design",
+    "AI / ML Engineering",
+    "Team Collaboration",
+    "Creative Problem Solving",
+    "Communication",
+    "Time Management"
   ],
 
-  // ============ IT / INDUSTRY SECTION ============
+  // ============ OVERVIEW SECTION ============
 
   industryLeadership: [
-    "16+ years of experience in Enterprise Software, AI/ML, Generative AI, and Agentic AI",
-    "Architect of industry-first Multi-Agentic RAG platforms",
-    "Proven expertise in LLMOps, MLOps, AIOps, SecOps, CI/CD",
-    "Experience handling 40+ years of legacy enterprise data (structured & unstructured)",
-    "Strong track record of research → pilot → production → scale"
+    "Pursuing M.Tech Integrated in Computer Science at VIT-AP with CGPA: 8.40/10",
+    "Hands-on experience building full-stack and AI-powered applications in production",
+    "Active contributor to automation and data extraction tools at GGS Information Services",
+    "Strong foundation in REST APIs, backend architecture, and cloud deployment",
+    "Passionate about solving real-world problems through innovative technology"
   ],
 
   coreExpertise: [
-    { title: "Generative AI & LLM Orchestration", icon: "fas fa-brain" },
-    { title: "Multi-Agentic AI Systems", subtitle: "RAG, SQL Agents, Workflow Automation", icon: "fas fa-robot" },
-    { title: "NLP", subtitle: "Advanced RAG, Summarization, Conversational AI", icon: "fas fa-comments" },
-    { title: "Computer Vision & Video Analytics", icon: "fas fa-eye" },
-    { title: "Cloud Architecture", subtitle: "AWS, GCP, On-Prem", icon: "fas fa-cloud" },
-    { title: "DevOps, MLOps, LLMOps, SecDevOps", icon: "fas fa-cogs" },
-    { title: "Industrial Automation & Edge AI", icon: "fas fa-microchip" }
+    { title: "Full Stack Development", subtitle: "React.js, Next.js, Node.js, Hono.js", icon: "fas fa-layer-group" },
+    { title: "Backend Architecture", subtitle: "REST APIs, Node.js, FastAPI", icon: "fas fa-server" },
+    { title: "Database Systems", subtitle: "MySQL, PostgreSQL, MongoDB, Redis, Neo4j", icon: "fas fa-database" },
+    { title: "AI / ML Engineering", subtitle: "LlamaIndex, FastAPI, LLM Systems", icon: "fas fa-brain" },
+    { title: "DevOps & Cloud", subtitle: "Docker, Cloudflare, Supabase, Netlify", icon: "fas fa-cloud" },
+    { title: "Data & Automation", subtitle: "Python, n8n, Tableau, Power BI", icon: "fas fa-chart-bar" }
   ],
 
   techSkills: [
-    { category: "LLMs", icon: "fas fa-brain", skills: ["Gemini 2.5 Flash", "Gemma 3", "LLaMA 4 Scout", "Mistral", "DeepSeek", "Claude", "SLMs"] },
-    { category: "Agentic Frameworks", icon: "fas fa-robot", skills: ["LangGraph", "LangChain", "LlamaIndex", "CrewAI", "AutoGen", "Haystack"] },
-    { category: "Vector Databases", icon: "fas fa-database", skills: ["FAISS", "Weaviate", "Pinecone", "ChromaDB", "LangSmith"] },
-    { category: "Programming", icon: "fas fa-code", skills: ["Python", "R", "SQL", "Java", "C++", "C"] },
-    { category: "ML / DL", icon: "fas fa-network-wired", skills: ["PyTorch", "TensorFlow", "Keras", "Hugging Face", "OpenCV", "Scikit-learn"] },
-    { category: "Databases", icon: "fas fa-server", skills: ["PostgreSQL", "MongoDB", "Cassandra", "Neo4j", "Oracle", "Hive"] },
-    { category: "Cloud & DevOps", icon: "fas fa-cloud", skills: ["AWS", "GCP", "Docker", "Kubernetes", "CI/CD Pipelines"] },
-    { category: "Tools & Platforms", icon: "fas fa-tools", skills: ["Power BI", "Tableau", "GitHub", "Jira", "Confluence", "Cursor.ai", "Copilot", "VS Code", "PyCharm"] }
+    { category: "Programming", icon: "fas fa-code", skills: ["Python", "Java", "JavaScript", "TypeScript"] },
+    { category: "Frontend", icon: "fas fa-desktop", skills: ["React.js", "Next.js", "Svelte", "Tailwind CSS", "HTML"] },
+    { category: "Backend", icon: "fas fa-server", skills: ["Node.js", "Hono.js", "FastAPI", "REST APIs"] },
+    { category: "Databases", icon: "fas fa-database", skills: ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "Redis", "Neo4j"] },
+    { category: "Tools & Platforms", icon: "fas fa-tools", skills: ["GitHub", "Docker", "Cloudflare", "Supabase", "Netlify", "n8n", "Figma"] },
+    { category: "Data & BI", icon: "fas fa-chart-bar", skills: ["Tableau", "Power BI", "QuickSight", "Excel"] },
+    { category: "AI / ML", icon: "fas fa-brain", skills: ["LlamaIndex", "pdfplumber", "PyMuPDF", "pytesseract", "Streamlit"] },
+    { category: "Design & Docs", icon: "fas fa-pencil-ruler", skills: ["Canva", "Draw.io", "PowerPoint", "MS Word"] }
   ],
 
   itExperience: [
     {
-      position: "Country Head – AI / GenAI & IT (Asia)",
-      organization: "GGS Information Services India Pvt Ltd",
-      period: "Feb 2025 – Present",
+      position: "Software Developer Trainee",
+      organization: "GGS Information Services India Pvt. Ltd.",
+      period: "August 2025 – Present",
       current: true,
-      clients: "Mercedes-Benz, Volvo-Eicher, Tata, Mahindra, Ashok Leyland, Daimler, Harley-Davidson",
       highlights: [
-        "Architected Industry-first Multi-Agentic RAG Framework for Automotive Enterprises",
-        "Delivered highest-accuracy pilot using RAGAS evaluation",
-        "Led secure GenAI ecosystems for service, diagnostics, parts & training",
-        "Designed scalable GenAI architectures using Gemini, LLaMA, Mistral",
-        "Implemented LLMOps, MLOps, CI/CD, SecDevOps",
-        "Ensured ethical AI, compliance & data privacy"
-      ]
+        "Developed a robust PDF-to-XML extraction tool using Python 3.13 and Streamlit, capable of processing large PDF files with accurate text, image, and table extraction.",
+        "Implemented advanced parsing using pdfplumber, PyMuPDF, camelot-py, tabula-py, and integrated OCR (pytesseract) for reliable image and text recognition.",
+        "Designed a scalable backend with modular architecture supporting server file paths and uploads, featuring progress tracking, session management, and automated cleanup."
+      ],
+      githubUrl: "#"
     },
     {
-      position: "Director – AI & Software Development",
-      organization: "Merry's Info-Tech & New-Gen Educare LLP, Bangalore",
-      period: "May 2024 – Feb 2025",
+      position: "Summer Intern",
+      organization: "Digital Fortress by Sibi Chakkaravarthy (Remote)",
+      period: "May 2024 – July 2024",
       highlights: [
-        "Led 11 enterprise AI & SaaS projects",
-        "Built platforms: CRM, BIM, LMS, Tele-Suite, NGO Portals",
-        "Designed AI chatbots & BIM AI plugins",
-        "Founded iLabs – Innovation Hub",
-        "Drove AI adoption strategies across enterprises"
-      ]
-    },
-    {
-      position: "AI Solution Architect (Consultant)",
-      organization: "Fusion Apps, Coimbatore",
-      period: "Jun 2022 – May 2024",
-      highlights: [
-        "Deployed Passenger Flow & Video Analytics Systems",
-        "Built YOLO-based vehicle recognition on Jetson Edge",
-        "Integrated HVAC, Security & Energy in Smart Buildings",
-        "Achieved 45% performance improvement using TensorRT"
-      ]
-    },
-    {
-      position: "Former CEO & Head – AI",
-      organization: "VihaanAI CyberLabs Pvt Ltd",
-      period: "May 2017 – May 2024",
-      highlights: [
-        "Led AI consulting for IT firms & startups",
-        "Owned AI strategy, product design & delivery",
-        "Built investor pitch decks & secured funding",
-        "Delivered AI solutions across multiple verticals"
-      ]
+        "Developed a web-based tool to manage logical volumes across distributed data centers.",
+        "Automated storage workflows, improving resource utilization and system efficiency.",
+        "Integrated real-time dashboards, storage alerts, and performance monitoring modules."
+      ],
+      githubUrl: "#"
     }
   ],
 
   industryProjects: [
     {
-      title: "Multi-Agent RAG for Automotive OEMs",
-      period: "2025 – Present",
-      icon: "fas fa-car",
+      title: "Hackathon Registration & Management System",
+      period: "June 2021 – July 2022",
+      icon: "fas fa-code-branch",
+      type: "Team Project",
       highlights: [
-        "VIN-based semantic retrieval across millions of documents",
-        "35%+ accuracy improvement over single-agent RAG"
-      ]
+        "Built a complete hackathon registration platform using Hono.js, hosted on Cloudflare.",
+        "Implemented automated email confirmations for registered teams.",
+        "Enabled organizers to export registered teams to Excel for streamlined event management."
+      ],
+      githubUrl: "#"
     },
     {
-      title: "Automotive AI Assist Chatbot – Tata",
-      icon: "fas fa-comments",
+      title: "PrivateGPT – Private AI Document Query System",
+      period: "Feb 2025 – Mar 2025",
+      icon: "fas fa-robot",
+      type: "Solo Project",
       highlights: [
-        "NLQ → SQL + Hybrid RAG",
-        "Reduced technician dependency & turnaround time"
-      ]
-    },
-    {
-      title: "AI Scam Call Detection (Telephony AI)",
-      icon: "fas fa-phone-slash",
-      highlights: [
-        "Real-time fraud prediction using audio + NLP",
-        "Integrated with Twilio / Vonage"
-      ]
-    },
-    {
-      title: "AI Resume Screening – Reliance",
-      icon: "fas fa-file-alt",
-      highlights: [
-        "Automated ATS with chat-based resume querying"
-      ]
-    },
-    {
-      title: "Edge AI Vehicle & People Analytics",
-      icon: "fas fa-video",
-      highlights: [
-        "YOLO, Jetson, RTSP pipelines for malls & retail"
-      ]
+        "Secure, offline-capable LLM system using FastAPI and LlamaIndex.",
+        "Implemented document ingestion, chunking, embeddings, and context-aware retrieval.",
+        "Enables private document queries entirely without internet dependence."
+      ],
+      githubUrl: "#"
     }
   ],
 
   // ============ ACADEMIC SECTION ============
 
   education: [
-    { degree: "Post Doctoral Fellow – AI/ML", university: "Lincoln University, Malaysia", year: "2022–2023", pdfUrl: "#" },
-    { degree: "Ph.D. in Cloud and Big Data Analytics", university: "VIT University, Andhra Pradesh, India", year: "2016–2021", pdfUrl: "#" },
-    { degree: "M.E. in Software Engineering (CGPA: 8.21)", university: "Anna University, PSG College of Technology, Coimbatore", year: "2010–2012", pdfUrl: "#" },
-    { degree: "B.E. in Computer Science and Engineering (83%)", university: "Anna University, SNS College of Technology, Coimbatore", year: "2006–2010", pdfUrl: "#" }
+    { degree: "M.Tech Integrated in Computer Science (CGPA: 8.40/10)", university: "Vellore Institute of Technology, Andhra Pradesh", year: "Sept 2021 – Present", pdfUrl: "#" },
+    { degree: "Higher Secondary – Computer Science (82.3%)", university: "Navarasam Matriculation Higher Secondary School, Erode", year: "2020 – 2021", pdfUrl: "#" },
+    { degree: "Secondary School – SSLC (73%)", university: "Navarasam Matriculation Higher Secondary School, Erode", year: "2018 – 2019", pdfUrl: "#" }
   ],
-
-  academicExperience: [
-    { position: "Head, AI & Machine Learning", organization: "KPR Institute of Engineering and Technology, Coimbatore", period: "Jun 2022 – Apr 2024" },
-    { position: "Associate Professor & Program Chair – AIML", organization: "VIT University, Andhra Pradesh", period: "May 2017 – Jun 2022" },
-    { position: "Assistant Professor", organization: "PSG Institute of Technology & Applied Research, Coimbatore", period: "May 2016 – May 2017" },
-    { position: "Tech Lead – Java/J2EE & Android", organization: "NIIT Ltd, Coimbatore", period: "Aug 2010 – Jun 2012" }
-  ],
-
-  academicLeadershipRoles: [
-    { role: "Head – AI & ML Department", icon: "fas fa-user-tie" },
-    { role: "Program Chair – AIML", icon: "fas fa-sitemap" },
-    { role: "Research Centre Head – Intelligent Systems", icon: "fas fa-flask" },
-    { role: "Chairman – Board of Studies", icon: "fas fa-gavel" },
-    { role: "NASSCOM FutureSkills Prime Ambassador & Master Trainer", icon: "fas fa-star" },
-    { role: "Innovation Ambassador – MoE, Govt. of India", icon: "fas fa-flag" }
-  ],
-
-  teachingSubjects: [
-    "Generative AI & LLMs", "Artificial Intelligence", "Machine Learning", "Deep Learning",
-    "Data Analytics", "Cloud & Big Data", "Python", "R", "Java",
-    "Data Structures & Algorithms", "DBMS", "Software Engineering",
-    "NoSQL", "Computer Graphics", "Apache Spark"
-  ],
-
-  publications: {
-    papers: "75+",
-    scopusIndexed: "40+",
-    sciScie: "7 SCI / SCIE (Q1 / Q2)",
-    bookChapters: "7",
-    books: [{ title: "Quantum Machine Learning", publisher: "Taylor & Francis", year: "2025" }],
-    patents: "12+",
-    phdScholars: "2"
-  },
-
-  researchFunding: [
-    { title: "AICTE IDEA Lab", amount: "₹1 Crore", icon: "fas fa-landmark" },
-    { title: "Quantum CNN-SVM (DEX Japan)", amount: "₹1 Crore", icon: "fas fa-atom" },
-    { title: "ICMR Healthcare", amount: "₹10 Lakhs", icon: "fas fa-heartbeat" },
-    { title: "FDPs & Workshops", amount: "₹6.5 Lakhs", icon: "fas fa-chalkboard" }
-  ],
-
-  consultancy: ["AI Chatbots", "IoT Systems", "Healthcare Drones", "Safety Devices"],
 
   certifications: [
-    { name: "GenAI & Agentic AI", issuer: "Vanderbilt University", icon: "fas fa-robot" },
-    { name: "Agentic AI, LangGraph, CrewAI", issuer: "IBM", icon: "fas fa-cog" },
-    { name: "Generative AI", issuer: "Databricks", icon: "fas fa-database" },
-    { name: "ML Data Scientist", issuer: "Oracle", icon: "fas fa-certificate" },
-    { name: "Salesforce Developer", issuer: "Salesforce", icon: "fab fa-salesforce" },
-    { name: "NASSCOM Master Trainer", issuer: "NASSCOM", icon: "fas fa-chalkboard-teacher" },
-    { name: "Cyber Security Intervention Officer", issuer: "Govt. Certified", icon: "fas fa-shield-alt" }
+    { name: "National Hackathon 2022", issuer: "IIEC, VIT-AP", icon: "fas fa-trophy" },
+    { name: "Full Stack Web Development Bootcamp – AI Integrated", issuer: "March 18, 2025", icon: "fas fa-code" },
+    { name: "Bootcamp on LLM Security (2025–2026)", issuer: "Null Vijayawada", icon: "fas fa-shield-alt" },
+    { name: "Letter of Recommendation – Web Development", issuer: "Dr. Subbaiah Muthu Prabhu, VIT-AP (May 2025)", icon: "fas fa-file-alt" }
   ],
 
   awards: [
-    { title: "AI Champion Award", year: "2024", icon: "fas fa-trophy" },
-    { title: "Alumni Entrepreneur Award", year: "2024", icon: "fas fa-award" },
-    { title: "Best Researcher Award", year: "2022, 2023", icon: "fas fa-star" },
-    { title: "Innovative Professor of the Year", year: "2022", icon: "fas fa-lightbulb" },
-    { title: "Best Performer", org: "Infosys", icon: "fas fa-medal" },
-    { title: "Best Team Player", org: "NIIT", icon: "fas fa-users" }
-  ],
-
-  globalCollaborations: [
-    { institution: "Georgia Southern University", country: "USA", icon: "fas fa-university" },
-    { institution: "Stanford University", country: "USA", icon: "fas fa-university" },
-    { institution: "Universities in Japan & Malaysia", country: "Asia", icon: "fas fa-globe-asia" },
-    { institution: "DEX Japan", country: "Japan", type: "Industry Research", icon: "fas fa-industry" }
-  ],
-
-  professionalMemberships: [
-    { title: "Senior Member", organization: "IEEE", icon: "fas fa-microchip" },
-    { title: "Life Member", organization: "ISTE", icon: "fas fa-book" },
-    { title: "Life Member", organization: "IAENG", icon: "fas fa-cogs" },
-    { title: "Life Member", organization: "ISRD", icon: "fas fa-flask" },
-    { title: "Professional Member", organization: "IFERP", icon: "fas fa-handshake" },
-    { title: "Professional Member", organization: "InSc", icon: "fas fa-atom" },
-    { title: "Member", organization: "AIMERS", icon: "fas fa-robot" }
+    { title: "Star of the Month Award", year: "January 2026", org: "GGS Information Services India Pvt. Ltd.", icon: "fas fa-star" },
+    { title: "National Hackathon Participant", year: "2022", org: "IIEC, VIT-AP", icon: "fas fa-trophy" },
+    { title: "Letter of Recommendation – Suwate24 Conference", year: "May 2025", org: "VIT-AP", icon: "fas fa-award" }
   ],
 
   navigation: [
     { id: "personal", label: "Profile", icon: "fas fa-user", group: null },
-    { id: "industry-overview", label: "Industry Leadership", icon: "fas fa-chart-line", group: "IT / INDUSTRY" },
-    { id: "tech-skills", label: "Technology Skills", icon: "fas fa-code", group: "IT / INDUSTRY" },
-    { id: "experience", label: "Work Experience", icon: "fas fa-briefcase", group: "IT / INDUSTRY" },
-    { id: "industry-projects", label: "Key Projects", icon: "fas fa-rocket", group: "IT / INDUSTRY" },
+    { id: "industry-overview", label: "About Me", icon: "fas fa-bullseye", group: "OVERVIEW" },
+    { id: "tech-skills", label: "Tech Skills", icon: "fas fa-code", group: "OVERVIEW" },
+    { id: "experience", label: "Experience", icon: "fas fa-briefcase", group: "EXPERIENCE & PROJECTS" },
+    { id: "industry-projects", label: "Projects", icon: "fas fa-rocket", group: "EXPERIENCE & PROJECTS" },
     { id: "education", label: "Education", icon: "fas fa-graduation-cap", group: "ACADEMIC" },
-    { id: "academic-roles", label: "Academic Roles", icon: "fas fa-chalkboard-teacher", group: "ACADEMIC" },
-    { id: "publications", label: "Research & Publications", icon: "fas fa-file-alt", group: "ACADEMIC" },
-    { id: "certifications", label: "Certifications & Awards", icon: "fas fa-award", group: "ACADEMIC" },
-    { id: "memberships", label: "Memberships", icon: "fas fa-users", group: "ACADEMIC" }
+    { id: "certifications", label: "Certifications & Awards", icon: "fas fa-award", group: "ACADEMIC" }
   ]
 };

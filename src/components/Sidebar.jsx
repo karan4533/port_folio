@@ -9,7 +9,7 @@ const Sidebar = ({ data, activeSection, onNavigate }) => {
       <div className="px-6 pb-5 pt-6 border-b border-white/10">
         <div className="mb-3">
           <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mb-3">
-            <i className="fas fa-brain text-2xl text-white"></i>
+            <i className="fas fa-code text-2xl text-white"></i>
           </div>
         </div>
         <h1 className="text-base font-bold mb-1 leading-tight text-white">
