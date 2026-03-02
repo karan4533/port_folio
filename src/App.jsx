@@ -80,7 +80,7 @@ function App() {
         onClose={() => setMobileMenuOpen(false)}
       />
 
-      <div className="lg:ml-80 relative z-10">
+      <div className="lg:ml-72 relative z-10">
         <Header
           name={profileData.name}
           onMenuClick={() => setMobileMenuOpen(true)}
