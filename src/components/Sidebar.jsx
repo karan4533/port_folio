@@ -18,13 +18,11 @@ const Sidebar = ({ data, activeSection, onNavigate }) => {
 
       {/* ── Profile Header ── */}
       <div className="px-6 pt-7 pb-5 border-b border-white/10 flex flex-col items-center text-center gap-3">
-        {/* Avatar */}
+        {/* Icon avatar */}
         <div className="relative">
-          <img
-            src={data.profileImage}
-            alt={data.name}
-            className="w-20 h-20 rounded-2xl object-cover ring-2 ring-white/20 shadow-lg"
-          />
+          <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center shadow-lg">
+            <i className="fas fa-code text-2xl text-white"></i>
+          </div>
           <span className="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-400 rounded-full border-2 border-sidebar shadow" title="Available for opportunities"></span>
         </div>
 
