@@ -43,10 +43,13 @@ const PersonalDetails = ({ data }) => {
             
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-              <button className="px-6 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg font-semibold transition-all duration-200">
+              <a
+                href={`mailto:${data.contact.emails[0]}?subject=Collaboration Inquiry&body=Hi ${data.name},%0A%0AI'd love to collaborate with you on...`}
+                className="px-6 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg font-semibold transition-all duration-200 inline-flex items-center"
+              >
                 <i className="fas fa-handshake mr-2"></i>
                 Collaborate with me
-              </button>
+              </a>
               <button className="px-6 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200 border border-gray-300">
                 <i className="fas fa-download mr-2"></i>
                 Download CV
