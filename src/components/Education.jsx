@@ -1,8 +1,9 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Education = ({ education }) => {
   return (
-    <section id="education" className="radiant-card p-6 md:p-8">
+    <motion.section id="education" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="radiant-card p-6 md:p-8">
       <div className="flex items-center mb-6">
         <div className="w-12 h-12 rounded-xl bg-purple-600 flex items-center justify-center mr-4 shadow-md">
           <i className="fas fa-graduation-cap text-white text-xl"></i>
@@ -12,9 +13,10 @@ const Education = ({ education }) => {
 
       <div className="space-y-4">
         {education.map((edu, index) => (
-          <div
+          <motion.div
             key={index}
-            className="p-5 rounded-xl bg-purple-50 border border-purple-100 hover:bg-purple-100 hover:border-purple-300 transition-all duration-300 group"
+            initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: index * 0.1 }}
+            className="p-5 rounded-xl bg-purple-50 border border-purple-100 hover:bg-purple-100 hover:border-purple-300 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 group"
           >
             <div className="flex items-start space-x-4">
               {/* PDF Badge */}
@@ -49,10 +51,10 @@ const Education = ({ education }) => {
                 )}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

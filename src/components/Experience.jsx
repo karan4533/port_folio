@@ -1,8 +1,9 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Experience = ({ experience }) => {
   return (
-    <section id="experience" className="radiant-card p-6 md:p-8">
+    <motion.section id="experience" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="radiant-card p-6 md:p-8">
       <div className="flex items-center mb-6">
         <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center mr-4 shadow-md">
           <i className="fas fa-briefcase text-white text-xl"></i>
@@ -15,12 +16,12 @@ const Experience = ({ experience }) => {
         <div className="absolute left-6 top-4 bottom-4 w-0.5 bg-blue-200"></div>
 
         {experience.map((exp, index) => (
-          <div key={index} className="relative pl-16">
+          <motion.div key={index} initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: index * 0.12 }} className="relative pl-16">
             {/* Timeline dot */}
             <div className={`absolute left-4 top-7 w-5 h-5 rounded-full shadow-md border-2 ${exp.current ? 'bg-green-500 border-green-300 animate-pulse' : 'bg-blue-600 border-blue-300'}`}></div>
 
             {/* Content card */}
-            <div className="p-5 rounded-xl bg-gradient-to-r from-blue-50 to-white border border-blue-100 hover:shadow-lg hover:border-blue-300 transition-all duration-300 group">
+            <div className="p-5 rounded-xl bg-gradient-to-r from-blue-50 to-white border border-blue-100 hover:shadow-xl hover:border-blue-300 hover:-translate-y-0.5 transition-all duration-300 group">
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2 gap-2">
                 <h4 className="text-lg font-bold text-gray-900">{exp.position}</h4>
                 <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold flex-shrink-0 ${exp.current ? 'bg-green-100 text-green-700 border border-green-200' : 'bg-blue-100 text-blue-700 border border-blue-200'}`}>
@@ -72,10 +73,10 @@ const Experience = ({ experience }) => {
                 </div>
               )}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

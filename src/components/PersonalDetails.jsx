@@ -1,10 +1,18 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 24 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.5, delay, ease: 'easeOut' },
+});
 
 const PersonalDetails = ({ data }) => {
   return (
     <section id="personal" className="space-y-6">
       {/* Hero Card with Profile */}
-      <div className="radiant-card p-8">
+      <motion.div {...fadeUp(0)} className="radiant-card p-8">
         <div className="grid md:grid-cols-4 gap-8 items-center">
           {/* Profile Image */}
           <div className="md:col-span-1 flex justify-center">
@@ -45,27 +53,28 @@ const PersonalDetails = ({ data }) => {
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
               <a
                 href={`mailto:${data.contact.emails[0]}?subject=Collaboration Inquiry&body=Hi ${data.name},%0A%0AI'd love to collaborate with you on...`}
-                className="px-6 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg font-semibold transition-all duration-200 inline-flex items-center"
+                className="px-6 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg font-semibold transition-all duration-200 inline-flex items-center hover:scale-105 hover:shadow-lg active:scale-95"
               >
                 <i className="fas fa-handshake mr-2"></i>
                 Collaborate with me
               </a>
-              <button className="px-6 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200 border border-gray-300">
+              <button className="px-6 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200 border border-gray-300 hover:scale-105 hover:shadow-md active:scale-95">
                 <i className="fas fa-download mr-2"></i>
                 Download CV
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Stats Cards */}
       {data.stats && (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {data.stats.map((stat, index) => (
-            <div
+            <motion.div
               key={index}
-              className="radiant-card p-6 text-center transition-all duration-200 group cursor-pointer hover:scale-105"
+              {...fadeUp(index * 0.08)}
+              className="radiant-card p-6 text-center transition-all duration-200 group cursor-pointer hover:scale-105 hover:shadow-xl"
             >
               <div className="w-14 h-14 mx-auto mb-3 rounded-xl bg-accent flex items-center justify-center shadow-sm">
                 <i className={`${stat.icon} text-2xl text-white`}></i>
@@ -74,13 +83,13 @@ const PersonalDetails = ({ data }) => {
                 {stat.value}
               </div>
               <div className="text-sm text-gray-600 font-medium">{stat.label}</div>
-            </div>
+            </motion.div>
           ))}
         </div>
       )}
 
       {/* Contact & Links Grid */}
-      <div className="grid md:grid-cols-2 gap-6">
+      <motion.div {...fadeUp(0.1)} className="grid md:grid-cols-2 gap-6">
         {/* Contact Information */}
         <div className="radiant-card p-6">
           <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
@@ -145,10 +154,10 @@ const PersonalDetails = ({ data }) => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Area of Interests */}
-      <div className="radiant-card p-6">
+      <motion.div {...fadeUp(0.15)} className="radiant-card p-6">
         <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
           <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center mr-3">
             <i className="fas fa-lightbulb text-white"></i>
@@ -165,7 +174,7 @@ const PersonalDetails = ({ data }) => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

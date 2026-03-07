@@ -1,8 +1,9 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const IndustryProjects = ({ projects }) => {
   return (
-    <section id="industry-projects" className="radiant-card p-6 md:p-8">
+    <motion.section id="industry-projects" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="radiant-card p-6 md:p-8">
       <div className="flex items-center mb-6">
         <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center mr-4 shadow-md">
           <i className="fas fa-rocket text-white text-xl"></i>
@@ -12,9 +13,10 @@ const IndustryProjects = ({ projects }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {projects.map((project, index) => (
-          <div
+          <motion.div
             key={index}
-            className="p-5 rounded-xl bg-gradient-to-br from-blue-50 to-white border border-blue-100 hover:shadow-lg hover:border-blue-300 transition-all duration-300 group"
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: index * 0.1 }}
+            className="p-5 rounded-xl bg-gradient-to-br from-blue-50 to-white border border-blue-100 hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 transition-all duration-300 group"
           >
             <div className="flex items-start gap-3 mb-3">
               <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
@@ -51,10 +53,10 @@ const IndustryProjects = ({ projects }) => {
                 View on GitHub
               </a>
             )}
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

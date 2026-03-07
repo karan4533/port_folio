@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const categoryConfig = [
   { gradient: "from-blue-500 to-blue-700",     light: "bg-blue-50 dark:bg-blue-950",   border: "border-blue-200",   pill: "bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-white hover:bg-blue-600 hover:text-white",   dot: "bg-blue-500" },
@@ -17,7 +18,7 @@ const TechSkills = ({ techSkills }) => {
   const totalSkills = techSkills.reduce((acc, cat) => acc + cat.skills.length, 0);
 
   return (
-    <section id="tech-skills" className="radiant-card p-6 md:p-8">
+    <motion.section id="tech-skills" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="radiant-card p-6 md:p-8">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div className="flex items-center gap-4">
@@ -105,10 +106,11 @@ const TechSkills = ({ techSkills }) => {
         {techSkills.slice(0, 4).map((cat, i) => {
           const cfg = categoryConfig[i % categoryConfig.length];
           return (
-            <div
+            <motion.div
               key={i}
+              initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.35, delay: i * 0.08 }}
               onClick={() => setActiveCategory(activeCategory === i ? null : i)}
-              className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100 cursor-pointer hover:shadow-md transition-all duration-200"
+              className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100 cursor-pointer hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
             >
               <div className={`w-9 h-9 rounded-lg bg-gradient-to-br ${cfg.gradient} flex items-center justify-center flex-shrink-0`}>
                 <i className={`${cat.icon} text-white text-sm`}></i>
@@ -117,11 +119,11 @@ const TechSkills = ({ techSkills }) => {
                 <div className="text-lg font-bold text-gray-900">{cat.skills.length}</div>
                 <div className="text-xs text-gray-500 font-medium truncate">{cat.category}</div>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

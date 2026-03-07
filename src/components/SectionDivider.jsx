@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const SectionDivider = ({ number, title, subtitle, color = "blue" }) => {
   const gradients = {
@@ -7,7 +8,7 @@ const SectionDivider = ({ number, title, subtitle, color = "blue" }) => {
   };
 
   return (
-    <div className={`relative overflow-hidden rounded-2xl bg-gradient-to-r ${gradients[color]} p-6 md:p-8 shadow-lg`}>
+    <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, ease: 'easeOut' }} className={`relative overflow-hidden rounded-2xl bg-gradient-to-r ${gradients[color]} p-6 md:p-8 shadow-lg`}>
       <div className="relative z-10 flex items-center gap-4">
         <span className="text-6xl font-black text-white/15 leading-none select-none">{number}</span>
         <div>
@@ -19,7 +20,7 @@ const SectionDivider = ({ number, title, subtitle, color = "blue" }) => {
       <div className="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-24 w-24 h-24 bg-white/5 rounded-full translate-y-1/2" />
       <div className="absolute top-1/2 right-16 w-12 h-12 bg-white/5 rounded-full" />
-    </div>
+    </motion.div>
   );
 };
 
